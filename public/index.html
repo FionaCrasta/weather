@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+    <h1>Rule Engine</h1>
+
+    <!-- Rule Creation Section -->
+   
+    <div class="rule1">
+        <h3>Create Rule</h3>
+        <input type="text" id="ruleString" placeholder="Enter rule (e.g., age > 30 && department == 'Sales')" />
+        <button id="createRuleBtn">Create Rule</button>
+        <p id="createRuleError" class="error"></p>
+    </div>
+
+    <!-- Rule Evaluation Section -->
+    <div class="rule2">
+        <h3>Evaluate Rule</h3>
+        <input type="text" id="ruleId" placeholder="Enter Rule ID" />
+        <button id="evaluateRuleBtn">Evaluate Rule</button>
+        <p id="evaluationResult" class="result"></p>
+        <p id="evaluationError" class="error"></p>
+    </div>
+
+    <!-- User Data Input -->
+    <div class="rule3">
+        <h3>User Data</h3>
+        <input type="text" id="age" placeholder="Age" />
+        <input type="text" id="department" placeholder="Department" />
+        <input type="text" id="salary" placeholder="Salary" />
+        <input type="text" id="experience" placeholder="Experience" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
